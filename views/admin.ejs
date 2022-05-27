@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+
+<body>
+    <section style="text-align: center">
+        <form action="/admin/addFilm" method="POST">
+            <h5>Add film</h5>
+            <input type="text" name="filmTitle" placeholder="Title">
+            <input type="text" name="filmImg" placeholder="Url">
+            <button type="submit"> Create </button>
+        </form>
+        <form action="/admin/deleteFilm" method="POST">
+            <h5>Delete film</h5>
+            <input type="text" name="filmDel" placeholder="Title">
+            <button type="submit"> Delete </button>
+        </form>
+    </section>
+</body>
+
+</html>

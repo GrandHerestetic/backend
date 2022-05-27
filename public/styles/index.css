@@ -1,0 +1,63 @@
+.films {
+   margin: 0 auto 100px auto;
+}
+
+.films__header {
+   display: flex;
+   color: white;
+   margin-top: 50px;
+   margin-bottom: 40px;
+   font-size: 24px;
+   align-items: center;
+   line-height: 0.6;
+}
+
+.films__header span {
+   font-weight: normal;
+   margin-right: 5px;
+}
+
+.films__header p {
+   line-height: 0.6;
+   color: rgb(197, 197, 197);
+}
+
+.films__inner {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 50px 30px;
+}
+
+.film__info {
+   flex: 1;
+   list-style: none;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   text-align: center;
+   width: 218px;
+   border-radius: 5px;
+
+   box-shadow: 5px 20px 50px #000;
+}
+
+.card__info {
+   margin-bottom: auto;
+}
+
+.card__image {
+   width: 218px;
+   height: 310px;
+}
+
+.card__name {
+   padding: 0px 5px;
+   color: white;
+   text-align: left;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.btn-schedule {
+   padding: 7px 30px;
+}
