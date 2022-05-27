@@ -6,21 +6,35 @@
     <link rel="stylesheet" href="/styles/style.css" type="text/css">
 </head>
 
+
 <body>
 <section style="text-align: center">
-    <form action="/admin/addCustomer" method="POST">
+    <form action="/admin/addProduct" method="POST">
         <h5>Add film</h5>
-        <input type="text" name="customerFullname" placeholder="customerFullname">
-        <input type="text" name="customerEmail" placeholder="customerEmail">
-        <input type="text" name="customerMobile" placeholder="customerMobile">
-        <input type="text" name="customerAddress" placeholder="customerAddress">
+        <input type="text" name="productTitle" placeholder="Title">
+        <input type="text" name="productImg" placeholder="Img">
         <button type="submit"> Create </button>
     </form>
-    <form action="/admin/deleteCustomer" method="POST">
+    <form action="/admin/deleteProduct" method="POST">
         <h5>Delete film</h5>
-        <input type="text" name="deleteCust" placeholder="customerFullname">
+        <input type="text" name="productDelete" placeholder="Title">
         <button type="submit"> Delete </button>
     </form>
+    <%if(product != '') {%>
+    <%product.forEach(element => {%>
+    <div class="col">
+        <div class="card">
+            <img src="" alt="" class="card__image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"><%=element.title%></p>
+            </div>
+        </div>
+    </div>
+    <%})%>
+    <%}else{%>
+        <h6>List is empty</h6>
+    <%}%>
 </section>
 </body>
 

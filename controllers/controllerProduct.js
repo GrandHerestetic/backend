@@ -8,7 +8,7 @@ class controllerProduct {
                 img: req.body.productImg
             })
             await product.save();
-            res.redirect('/input')
+            res.redirect('/admin')
         } catch (e) {
             console.log(e)
         }
@@ -16,8 +16,8 @@ class controllerProduct {
     async deleteProduct(req, res){
         try{
             const productTitle = req.body.productDelete
-            const product = await modelProduc.findOneAndDelete({title: productTitle})
-            res.redirect('/input')
+            const product = await modelProduct.findOneAndDelete({title: productTitle})
+            res.redirect('/admin')
         } catch (e) {
             console.log(e)
         }

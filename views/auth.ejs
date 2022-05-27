@@ -7,14 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <title>Web Tech</title>
 </head>
 <body>
+</div>
 <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid header" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid header">
         <a class="navbar-brand" href="/">Главная</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,35 +29,25 @@
                     <a class="nav-link" href="/products">Товары</a>
                 </li>
             </ul>
-            <a class="nav-link" href="/auth" style="color: #6c757d">Sign In</a>
+            <a class="nav-link" href="/auth" style="color: #6c757d">Войти</a>
         </div>
     </div>
 </nav>
 <!-- First Section -->
 <div class="Section">
     <form action="/auth/addProduct">
-        <h5>Add product</h5>
-        <input type="text" name="productTitle" placeholder="Title">
-        <input type="stext" name="productImg" placeholder="Img">
-        <button type="submit"> Create </button>
+    <h5>Add product</h5>
+    <input type="text" name="productTitle" placeholder="Title">
+    <input type="stext" name="productImg" placeholder="Img">
+    <button type="submit"> Create </button>
     </form>
-    <form action="/auth/deleteFilm" method="POST">
+    <form action="/auth/deleteProduct" method="POST">
         <h5>Delete product</h5>
         <input type="text" name="productDelele" placeholder="Title">
-        <button type="submit"> Delete </button>
+        <button type="submit"> Delete
+        </button>
     </form>
 </div>
-<div class="card" style="background-color: #212529; padding: 3% 0 3% 0">
-    <div class="Footer">
-        <div class="card-body">
-            <h5 class="card-title">Done by: Nursultan Kasymkhanov</h5>
-            <p class="card-text">Гарантия работает 7 дней и только с представлением чека.</p>
-        </div>
-    </div>
-</div>
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <!-- Option 2: Separate Popper and Bootstrap JS -->
