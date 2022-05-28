@@ -3,6 +3,9 @@ const router = express.Router()
 const path = require('path')
 const controllerProduct = require('../controllers/controllerProduct')
 const modelProduct = require('../models/modelProduct')
+const middlewareRole = require('../middlewaree/middlewareRole')
+const middlewareAuth = require('../middlewaree/middlewareAuth')
+const cookie = require('cookie-parser')
 
 
 router
@@ -16,6 +19,6 @@ router
     });
 
 router.post('/addProduct', controllerProduct.addProduct)
-router.post('/deleteProduct', controllerProduct.deleteProduct)
+router.post('/deleteProduct',  controllerProduct.deleteProduct)
 
 module.exports = router

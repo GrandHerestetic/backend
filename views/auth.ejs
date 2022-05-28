@@ -34,18 +34,20 @@
     </div>
 </nav>
 <!-- First Section -->
-<div class="Section">
-    <form action="/auth/addProduct">
-    <h5>Add product</h5>
-    <input type="text" name="productTitle" placeholder="Title">
-    <input type="stext" name="productImg" placeholder="Img">
-    <button type="submit"> Create </button>
+<div class="card-body">
+    <form action="/auth/registration" method="POST">
+    <h5>Registration</h5>
+    <input type="text" name="newUsername" placeholder="Username">
+    <input type="text" name="newPassword" placeholder="Password">
+    <button type="submit">Create </button>
     </form>
-    <form action="/auth/deleteProduct" method="POST">
-        <h5>Delete product</h5>
-        <input type="text" name="productDelele" placeholder="Title">
-        <button type="submit"> Delete
-        </button>
+</div>
+<div class="card-body">
+    <form action="/auth/login" method="POST">
+        <h5>Login</h5>
+        <input type="text" name="userUsername" placeholder="Username">
+        <input type="text" name="userPassword" placeholder="Password">
+        <button type="submit">Log In</button>
     </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>

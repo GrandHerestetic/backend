@@ -8,18 +8,12 @@ const {check} = require("express-validator")
 const middlewareAuth = require("../middlewaree/middlewareAuth")
 const middlewareRole = require("../middlewaree/middlewareRole")
 
-
-/**
- * @swagger
- *  components
- */
-
 router
     .route("/")
     .get( async (req,res) =>{
         const user = await modelUser.find()
-        res.render(path.resolve('views/auth.ejs'), {
-            activePage: 'auth',
+        res.render(path.resolve('views/login.ejs'), {
+            activePage: 'login',
             user: user,
         })
     });
@@ -29,6 +23,6 @@ router.post('/registration', [
     //check('password',"Password should be more than 4 and less than 10").isLength({min: 4, max: 10})
 ], controllerUser.registration)
 router.post('/login', controllerUser.login)
-router.get('/logout', middlewareAuth,  controllerUser.logout)
+router.get('/users', middlewareAuth,  controllerUser.logout)
 
 module.exports = router

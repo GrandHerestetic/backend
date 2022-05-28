@@ -35,41 +35,13 @@
 </nav>
 <!-- First Section -->
 <div class="Section">
-    <div class="Title_AboutUs">
-        <h1>
-            О нас
-        </h1>
-    </div>
-    <div class="Features">
-        <div class="card bg-dark text-white">
-            <img src="image/AboutUsFirst.jpeg" class="card-img" alt="...">
-            <div class="card-img-overlay" style="color: black">
-                <h5 class="card-title">Ручная работа</h5>
-                <p class="card-text">Все наши изделия изготавлюваются исключительно с помощью ручной работы и проходять тщательную проверку.</p>
-            </div>
-        </div>
-    </div>
-    <div class="Features">
-        <div class="card bg-dark text-white">
-            <img src="image/Cows.jpeg" class="card-img" alt="...">
-            <div class="card-img-overlay" style="color: black">
-                <h5 class="card-title">Местное производство</h5>
-                <p class="card-text">Все наши изделия изготовливаются из местных продуктов, включая саму кожу.</p>
-            </div>
-        </div>
-    </div>
+    <form action="/auth/login" method="POST">
+    <h5>Login</h5>
+    <input type="text" name="userUsername" placeholder="Username">
+    <input type="text" name="userPassword" placeholder="Password">
+    <button type="submit">Log in</button>
+    </form>
 </div>
-<div class="card" style="background-color: #212529; padding: 3% 0 3% 0">
-    <div class="Footer">
-        <div class="card-body">
-            <h5 class="card-title">Done by: Shynngys Kazhiyev</h5>
-            <p class="card-text">Гарантия работает 7 дней и только с представлением чека.</p>
-        </div>
-    </div>
-</div>
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <!-- Option 2: Separate Popper and Bootstrap JS -->

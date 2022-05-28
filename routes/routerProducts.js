@@ -4,6 +4,13 @@ const path = require('path')
 const modelProduct = require('../models/modelProduct')
 
 
+/**
+ * @swagger
+ *  tags:
+ *    name: Posts
+ *    description: posts of users
+ */
+
 router
     .route("/")
     .get( async (req,res) => {
